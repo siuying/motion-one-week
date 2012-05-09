@@ -149,7 +149,7 @@
 # 2. Awesome!
 
 !SLIDE
-## _"it will be the creation of the next Rails-for-iOS framework." Dr. Nic_
+## _"it will be the creation of the next Rails-for-iOS framework." <br>Dr. Nic_
 
 !SLIDE 
 # Wrappers
@@ -207,15 +207,14 @@
 !SLIDE huge
 # BubbleWrap
 
-!SLIDE 
-
+!SLIDE
 # Simpler HTTP
 
 !SLIDE code fullscreentext
 
     @@@ ruby
-    BubbleWrap::HTTP.get("https://api.github.com/users/mattetti") do |response|
-      p response.body.to_str
+    BubbleWrap::HTTP.get("https://api.github.com/users/matz") do |res|
+      p res.body.to_s
     end
 
 !SLIDE 
