@@ -143,7 +143,7 @@
 
 !SLIDE
 
-# So, Why Border?
+# So, Why bother?
 
 !SLIDE huge
 # 2. Awesome!
