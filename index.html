@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>RubyMotion</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/style.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/1">
+<h1><span class="hl">RubyMotion</span> the First Week Impressions</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/2">
+<h2>About</h2>
+
+<ul>
+<li>Francis Chong <a href="http://twitter.com/siuying">@siuying</a></li>
+<li><a href="http://ignition.hk">Ignition Soft</a></li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/3">
+<h2>Agenda</h2>
+
+<ol>
+<li>The Basic</li>
+<li>The Good</li>
+<li>The Gotcha</li>
+</ol>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="intro/01_basic/4">
+<p><img src="./file/intro/logotype-icon.png" alt=""/></p></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/01_basic/5">
+<h1>The Basic</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/6">
+<h2>Ruby on iOS</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/7">
+<h1>MacRuby + GC + <br>Toolchain</br></h1>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bigger" ref="intro/01_basic/8">
+<h1><span class="hl">MacRuby</span></h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/9">
+<h2>An implementation of Ruby 1.9 based on Mac OS X core technologies</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/10">
+<ul>
+<li>Objective-C Runtime</li>
+<li>Foundation</li>
+<li>ICU</li>
+<li>GCD</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/11">
+<h2>Statically compiled into native code <br>via <span class="hl">LLVM</span></br></h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bigger" ref="intro/01_basic/12">
+<h1>Toolchain</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/13">
+<h2>Interactive console (REPL)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/14">
+<h2>Raketask</h2></div>
+</div><div class="slide" data-transition="none"><div class="content command fullscreentext" ref="intro/01_basic/15">
+<pre><code>$ rake --tasks
+rake archive              # Create archives for everything
+rake archive:development  # Create an .ipa archive for development
+rake archive:release      # Create an .ipa for release (AppStore)
+rake build                # Build everything
+rake build:device         # Build the device version
+rake build:simulator      # Build the simulator version
+rake clean                # Clear build objects
+rake config               # Show project config
+rake ctags                # Generate ctags
+rake default              # Build the project, then run the simulator
+rake device               # Deploy on the device
+rake simulator            # Run the simulator
+rake spec                 # Run specs
+</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/16">
+<h2>Cocoapods Integration</h2></div>
+</div><div class="slide" data-transition="none"><div class="content fullscreentext" ref="intro/01_basic/17">
+<pre class="sh_ruby"><code>$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project'
+require 'motion-cocoapods'
+
+Motion::Project::App.setup do |app|
+  app.name = 'App'
+  app.pods do
+    dependency 'ASIHTTPRequest'
+    dependency 'NanoStore'
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_basic/18">
+<h1>Let's Code</h1></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/02_good/1">
+<h1>The Good</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/2">
+<h1>Objective-C vs Ruby</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/3">
+<h1>Objective C</h1>
+
+<pre class="sh_c"><code>@implementation AppDelegate
+
+@synthesize window = _window;
+@synthesize viewController = _viewController;
+
+- (BOOL)application:(UIApplication *)application 
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" 
+                                                           bundle:nil];
+    self.window.rootViewController = self.viewController;
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+@end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/4">
+<h1>Ruby</h1>
+
+<pre class="sh_ruby"><code>class AppDelegate
+  def application(application, 
+      didFinishLaunchingWithOptions:launchOptions)
+    @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.applicationFrame)
+    @window.rootViewController = ViewController.alloc.initWithStyle(UITableViewStylePlain)
+    @window.rootViewController.wantsFullScreenLayout = true
+    @window.makeKeyAndVisible
+    return true
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/5">
+<h1>No Headers</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/6">
+<h1>AppDelegate.h</h1>
+
+<pre class="sh_c"><code>#import &lt;UIKit/UIKit.h&gt;
+
+@class ViewController;
+@interface AppDelegate : UIResponder &lt;UIApplicationDelegate&gt;
+
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ViewController *viewController;
+@end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/7">
+<h1>Less boilerplate</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/8">
+<pre class="sh_c"><code>@class ViewController;
+@interface AppDelegate : UIResponder &lt;UIApplicationDelegate&gt;
+@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) ViewController *viewController;
+@end
+
+@implementation AppDelegate
+@synthesize window = _window;
+@synthesize viewController = _viewController;
+@end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/9">
+<h1>Similar</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/10">
+<h1>Objective C</h1>
+
+<pre class="sh_c"><code>[delegate application:app didFinishLaunchingWithOptions:options]</code></pre>
+
+<h1>Ruby</h1>
+
+<pre class="sh_ruby"><code>delegate.application(app, didFinishLaunchingWithOptions:options)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/11">
+<h1>After one week</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/12">
+<h1>Two type of opinions</h1></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/02_good/13">
+<h1>1. Won't help</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/14">
+<h2><em>"You should just learn Objective-C<br/> and CocoaTouch."</em></h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/15">
+<h2>RubyMotion will not simplify your CocoaTouch code (yet)</h2></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/16">
+<h1>Ruby</h1>
+
+<pre class="sh_ruby"><code>class AppDelegate
+  def application(application, 
+      didFinishLaunchingWithOptions:launchOptions)
+    @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.applicationFrame)
+    @window.rootViewController = ViewController.alloc.initWithStyle(UITableViewStylePlain)
+    @window.rootViewController.wantsFullScreenLayout = true
+    @window.makeKeyAndVisible
+    return true
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/17">
+<h2>You need to know CocoaTouch!</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/18">
+<h2>Even you know CocoaTouch...</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/19">
+<h2>... you'll have a hard time typing.</h2></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/20">
+<h1>Ruby</h1>
+
+<pre class="sh_ruby"><code>delegate.application(app, didFinishLaunchingWithOptions:options)</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/21">
+<h1>So, Why Border?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/02_good/22">
+<h1>2. Awesome!</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/23">
+<h2><em>"it will be the creation of the next Rails-for-iOS framework." <br>Dr. Nic</br></em></h2>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/24">
+<h1>Wrappers</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/25">
+<h1>Objective-C Style Ruby</h1>
+
+<pre class="sh_ruby"><code>def showSelection
+  UIView.beginAnimations(nil, context:nil)
+  UIView.animationDuration = 0.2
+  @selection.alpha = 1
+  @picker.alpha = 0
+  UIView.commitAnimations
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/26">
+<h1>Ruby Magic</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/27">
+<pre class="sh_ruby"><code>class UIView
+  def self.animate_with_block(duration = 0.5)
+    beginAnimations(nil, context:nil)
+    animationDuration = duration
+    yield
+    commitAnimations
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/28">
+<h1>Objective-C Style Ruby</h1>
+
+<pre class="sh_ruby"><code>#Before
+def showSelection
+  UIView.beginAnimations(nil, context:nil)
+  UIView.animationDuration = 0.2
+  @selection.alpha = 1
+  @picker.alpha = 0
+  UIView.commitAnimations
+end
+
+# After
+def showSelection
+  UIView.animate_with_block(0.2) do
+    @selection.alpha = 1
+    @picker.alpha = 0
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/02_good/29">
+<h1>BubbleWrap</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/30">
+<h1>Simpler HTTP</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/31">
+<pre class="sh_ruby"><code>BubbleWrap::HTTP.get("https://api.github.com/users/matz") do |res|
+  p res.body.to_s
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/02_good/32">
+<h1>Gesture</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/33">
+<pre class="sh_ruby"><code>view.whenTapped do
+  UIView.animate_with_block(0.2) do
+    @selection.alpha = 1
+    @picker.alpha = 0
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/02_good/34">
+<h1>Commotion</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/35">
+<pre class="sh_ruby"><code>class Movie &lt; Entity
+  field :title, type: String
+  field :total_gross, type: Float
+  field :createdAt, type: Time
+end
+
+Movie.create do |movie|
+  movie.title = "Iron Man"
+  movie.total_gross = 100000000
+end
+
+puts Movie.all
+puts Movie.find_by_title("Iron Man")</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/02_good/36">
+<h1>SimpleView</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/02_good/37">
+<pre class="sh_ruby"><code>def viewDidLoad
+  view.setup do
+    label width: 200, height: 20, text: "Choose your lucky word", color: UIColor.darkGrayColor
+    image_view top: 50, left: 50, image:UIImage.imageName("sample.jpg")
+  end
+end</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/03_gotcha/1">
+<h1>The Gotcha</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/2">
+<h1>No <span class="hl">rubygems</span> (yet)</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/3">
+<h1>No <span class="hl">require</span> (no joke)</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/4">
+<h1>Load order matters</h1></div>
+</div><div class="slide" data-transition="none"><div class="content code fullscreentext" ref="intro/03_gotcha/5">
+<pre class="sh_ruby"><code>app.files_dependencies("app/models/clip_item.rb" =&gt; 
+  "app/models/nano_store.rb")</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/6">
+<h1>Cocoapods is not fully integrated</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/7">
+<h1>GC is not very stable</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/8">
+<h1>No Xcode Integration</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/9">
+<h1>It is rapidly changing</h1></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/03_gotcha/10">
+<h1>Bottom Line</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/11">
+<h1>Hack it and create amazing things</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/12">
+<h1>Don't rush to build your next big project on it (yet)</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/03_gotcha/13">
+<h1>Learn CocoaTouch</h1></div>
+</div><div class="slide" data-transition="none"><div class="content huge" ref="intro/04_end/1">
+<h1>Questions?</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/04_end/2">
+<ul>
+<li><a href="https://github.com/siuying/NanoStoreInMotion">NanoStoreInMotion</a></li>
+<li><a href="https://github.com/siuying/UserSettingsModel">UserSettingsModel</a></li>
+</ul>
+</div>
+</div></div>
+
+</body>
+</html>
