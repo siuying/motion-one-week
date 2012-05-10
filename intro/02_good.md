@@ -252,3 +252,16 @@
     puts Movie.all
     puts Movie.find_by_title("Iron Man")
 
+!SLIDE huge
+    
+# SimpleView
+
+!SLIDE code fullscreentext
+    
+    @@@ ruby
+    def viewDidLoad
+      view.setup do
+        label width: 200, height: 20, text: "Choose your lucky word", color: UIColor.darkGrayColor
+        image_view top: 50, left: 50, image:UIImage.imageName("sample.jpg")
+      end
+    end
